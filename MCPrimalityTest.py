@@ -6,7 +6,6 @@ Author: Mattia Cacciatore <cacciatore1995@hotmail.it>
 import math
 import numpy as np
 import random as rd
-import time
 # ------------------------------ FUNCTIONS ---------------------------------
 def mygcd(m,n):
     return math.gcd(m,n)
