@@ -66,6 +66,9 @@ def main():
     no_tests = input("Enter the number of attempts: ")
     n = input("Enter the number: ")
     # Upper bound error : 1/(4^no_tests) < (n-1)/2
+    # Error is when n is composite and the Miller-Rabin test use 
+    # a base that tells you 'n is prime', but in fact that base is
+    # a MR-liar. The number of MR-liars is less than (n-1)/2.
     for i in range(int(no_tests)):
         print(str(n) + " is " + MC_Miller_Rabin_test(int(n)))
 
