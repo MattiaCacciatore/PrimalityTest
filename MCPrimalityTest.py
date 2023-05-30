@@ -16,8 +16,6 @@ def make_multiplicative_group(n):
     Z_n = np.array([])
     # 'a' is a base
     for a in range(n):
-        if(a == 1000000):
-            return np.array([])
         if(mygcd(a,n) == 1):
             Z_n = np.append(Z_n, a);
     return Z_n
